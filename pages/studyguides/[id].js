@@ -134,7 +134,7 @@ export default function Subject({ data }){
 
 export async function getServerSideProps(ctx){
     auth(ctx, '/studyguides/'+ctx.query.id, '/login')
-    let path = 'http://localhost:3030/study_guide/'+ctx.query.id
+    let path = 'https://afternoon-reaches-73581.herokuapp.com/'+ctx.query.id
     let userData = await fetchUserData(ctx)
     let data
     try{

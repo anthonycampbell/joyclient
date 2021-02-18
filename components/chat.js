@@ -26,7 +26,7 @@ function ChatBox({ws, friend, chat, openChats, index, setOpenChats, messages, se
         let mounted = true
         async function getMessages(){
           try {
-            let res = await fetch('http://localhost:3030/chat',{
+            let res = await fetch('https://afternoon-reaches-73581.herokuapp.com/chat',{
               method: 'POST',
               credentials: 'include',
               headers: {

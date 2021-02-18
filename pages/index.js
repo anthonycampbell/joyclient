@@ -17,7 +17,7 @@ const fetcher = (url, input) => {
 export default function Index({ friends, friendRequests, sgs }){
   const studyGuides = sgs
   const [input, setInput] = useState({newStudyGuide: ''})
-  const { data } = useSWR('http://localhost:3030/study_guide',
+  const { data } = useSWR('https://afternoon-reaches-73581.herokuapp.com/study_guide',
                           fetcher,
                           {initialData: {studyGuides}})
 
@@ -27,9 +27,9 @@ export default function Index({ friends, friendRequests, sgs }){
 
   async function handleSubmit(e){
     e.preventDefault()
-    await fetcher('http://localhost:3030/study_guide', input)
+    await fetcher('https://afternoon-reaches-73581.herokuapp.com/study_guide', input)
     setInput({newStudyGuide: ''})
-    mutate('http://localhost:3030/study_guide')
+    mutate('https://afternoon-reaches-73581.herokuapp.com/study_guide')
   } 
   return (
     <>
@@ -64,7 +64,7 @@ export async function getServerSideProps(ctx){
   let userData = await fetchUserData(ctx)
   let studyGuides = []
   try{
-    let res = await fetch('http://localhost:3030/study_guide', {
+    let res = await fetch('https://afternoon-reaches-73581.herokuapp.com/study_guide', {
       credentials: 'include',
       headers: { cookie: ctx.req.headers.cookie }
     })

@@ -5,7 +5,7 @@ export default function Logout(){
     async function logout(event){
         event.preventDefault()
         try{
-            let res = await fetch('http://localhost:3030/logout', {
+            let res = await fetch('https://afternoon-reaches-73581.herokuapp.com/logout', {
                 method: 'POST',
                 credentials: 'include'
               })

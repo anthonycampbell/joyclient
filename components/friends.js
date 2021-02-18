@@ -14,7 +14,7 @@ export default function Friends({ friends, friendRequests, children }){
 
     async function addFriend(event){
         event.preventDefault()
-        await fetch('http://localhost:3030/friendRequests', {
+        await fetch('https://afternoon-reaches-73581.herokuapp.com/friendRequests', {
             method: 'POST',
             headers: { 
                 'Accept': 'application/json',
@@ -32,7 +32,7 @@ export default function Friends({ friends, friendRequests, children }){
 
     async function processRequest(event, id){
         let response = {'answer': event.target.innerText, 'requester': id}
-        fetch('http://localhost:3030/processFriendRequest', {
+        fetch('https://afternoon-reaches-73581.herokuapp.com/processFriendRequest', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
