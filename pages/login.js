@@ -19,6 +19,7 @@ export default function Login(){
                 'Content-Type': 'application/json'
             },
             credentials: 'include',
+            mode: 'cors',
             body: JSON.stringify(input)
         })
         .then(res => res.json())
