@@ -1,0 +1,109 @@
+.t {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0; 
+    margin: 0;
+}
+
+.ta {
+    display: table-cell;
+    vertical-align: inherit;
+    outline: none;
+    resize: none;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.tas {
+    display: table-cell;
+    vertical-align: inherit;
+    outline: none;
+    resize: none;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: lightblue;
+}
+
+.td {
+    display: table-cell;
+    vertical-align: inherit;
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: top;
+    padding: 0; 
+    margin: 0;
+    min-width: 154px;
+}
+
+.tds {
+    display: table-cell;
+    vertical-align: inherit;
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: top;
+    padding: 0; 
+    margin: 0;
+    min-width: 154px;
+    background-color: lightblue;
+}
+
+.th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: top;
+    padding: 0; 
+    margin: 0;
+    min-width: 154px;
+    background-color: #4CAF50;
+}
+
+.ths{
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: top;
+    padding: 0; 
+    margin: 0;
+    min-width: 154px;
+    background-color: #3e8e41;
+}
+
+.tha {
+    outline: none;
+    resize: none;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+    background-color: #4CAF50;
+}
+
+.thas {
+    outline: none;
+    resize: none;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3e8e41;
+    
+}
