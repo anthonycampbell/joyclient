@@ -12,7 +12,7 @@ export default function Login(){
 
     function handleSubmit(event){
         event.preventDefault()
-        fetch('https://damp-gorge-49687.herokuapp.com/https://afternoon-reaches-73581.herokuapp.com/login', {
+        fetch('https://afternoon-reaches-73581.herokuapp.com/login', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
