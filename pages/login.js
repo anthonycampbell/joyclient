@@ -18,7 +18,6 @@ export default function Login(){
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            credentials: 'include',
             body: JSON.stringify(input)
         })
         .then(res => res.json())
