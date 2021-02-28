@@ -14,10 +14,6 @@ export default function Login(){
         event.preventDefault()
         fetch('https://afternoon-reaches-73581.herokuapp.com/login', {
             method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
             credentials: 'include',
             body: JSON.stringify(input)
         })
