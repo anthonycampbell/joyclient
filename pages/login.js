@@ -17,7 +17,7 @@ export default function Login(){
             credentials: 'include',
             body: JSON.stringify(input)
         })
-        .then(res => res.json())
+        .then(res => res.text())
         .catch(err => console.error(err))
         .then(data => {
             router.push('/') 
