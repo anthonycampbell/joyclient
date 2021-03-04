@@ -22,11 +22,11 @@ export default function Login(){
             body: JSON.stringify(input)
         })
         .then(res => {
-            console.log(res.json())
             res.json()
         })
         .catch(err => console.error(err))
         .then(data => {
+            console.log(data)
             router.push('/') 
         })
     }
